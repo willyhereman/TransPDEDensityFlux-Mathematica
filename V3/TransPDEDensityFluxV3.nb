@@ -1,0 +1,1692 @@
+(************** Content-type: application/mathematica **************
+                     CreatedBy='Mathematica 5.0'
+
+                    Mathematica-Compatible Notebook
+
+This notebook can be used with any Mathematica-compatible
+application, such as Mathematica, MathReader or Publicon. The data
+for the notebook starts with the line containing stars above.
+
+To get the notebook into a Mathematica-compatible application, do
+one of the following:
+
+* Save the data starting with the line of stars above into a file
+  with a name ending in .nb, then open the file inside the
+  application;
+
+* Copy the data starting with the line of stars above to the
+  clipboard, then use the Paste menu command inside the application.
+
+Data for notebooks contains only printable 7-bit ASCII and can be
+sent directly in email or through ftp in text mode.  Newlines can be
+CR, LF or CRLF (Unix, Macintosh or MS-DOS style).
+
+NOTE: If you modify the data for this notebook not in a Mathematica-
+compatible application, you must delete the line below containing
+the word CacheID, otherwise Mathematica-compatible applications may
+try to use invalid cache data.
+
+For more information on notebooks and Mathematica-compatible 
+applications, contact Wolfram Research:
+  web: http://www.wolfram.com
+  email: info@wolfram.com
+  phone: +1-217-398-0700 (U.S.)
+
+Notebook reader applications are available free of charge from 
+Wolfram Research.
+*******************************************************************)
+
+(*CacheID: 232*)
+
+
+(*NotebookFileLineBreakTest
+NotebookFileLineBreakTest*)
+(*NotebookOptionsPosition[     43119,       1407]*)
+(*NotebookOutlinePosition[     43803,       1430]*)
+(*  CellTagsIndexPosition[     43759,       1426]*)
+(*WindowFrame->Normal*)
+
+
+
+Notebook[{
+Cell[BoxData[
+    \(\(\(\[IndentingNewLine]\)\( (*\ 
+      Use\ the\ SetDirectory\ command\ to\ give\ the\ path\ where\ \
+Mathematica\ can\ find\ the\ \(\(software\)\(.\)\(\ \)\)\)\)\)], "Input"],
+
+Cell[BoxData[
+    \( (*\ Format : \ 
+        SetDirectory["\<c:\\myDirectory\\subdirectory\>"]\ *) \)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(SetDirectory["\<d:\\demoTransPDEDensityFlux\\web2003\>"]\)], "Input"],
+
+Cell[BoxData[
+    \("d:\\demoTransPDEDensityFlux\\web2003"\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(Get["\<TransPDEDensityFluxV3.m\>"]\)], "Input"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("  *** MENU INTERFACE ***  (page: "\[InvisibleSpace]1\
+\[InvisibleSpace]")"\),
+      SequenceForm[ "  *** MENU INTERFACE ***  (page: ", 1, ")"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("-------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \("  1) KdV Equation (d_kdv.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  2) Modified KdV Equation (d_mkdv.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  3) Fifth Order KdV Equation-parameterized (d_5kdv.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  4) Fifth Order KdV Equation-Lax Case (d_5lax.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  5) Fifth Order KdV Equation-SK Case (d_5sk.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  6) Fifth Order KdV Equation-KK Case (d_5kk.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  7) Fifth Order KdV Equation-Ito Case (d_5ito.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  8) Seventh Order KdV Equation-parameterized (d_7kdv.m)"\)], "Print"],
+
+Cell[BoxData[
+    \("  9) Seventh Order KdV Equation-Lax Case (d_7lax.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 10) Seventh Order KdV Equation-SK-Ito Case (d_7ski.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 11) Seventh Order KdV Equation KK Case (d_7kk.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 12) Schamel Equation (d_scham.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 13) Rosenau-Hyman Equation (d_roshy.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 14) Hirota-Satsuma System-parameterized (d_phrsat.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 15) Hirota-Satsuma System (d_hirsat.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" nn) Next Page"\)], "Print"],
+
+Cell[BoxData[
+    \(" tt) Your System"\)], "Print"],
+
+Cell[BoxData[
+    \(" qq) Exit the Program"\)], "Print"],
+
+Cell[BoxData[
+    \("------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("  *** MENU INTERFACE ***  (page: "\[InvisibleSpace]2\
+\[InvisibleSpace]")"\),
+      SequenceForm[ "  *** MENU INTERFACE ***  (page: ", 2, ")"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("-------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \(" 16) Ito System-parameterized (d_pito.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 17) Ito System (d_ito.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 18) NLS System (real and imaginary parts) (d_nls.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 19) NLS System (equation and conjugate) (d_nlsalt.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 20) DNLS System (d_dnls.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 21) MVDNLS System (d_mvdnls.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 22) Kaup System-parameterized (d_pkaup.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 23) Kaup System (d_kaup.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 24) Kaup-Broer System (d_broer.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 25) Drinfel'd-Sokolov System (d_soko.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 26) Dispersive Long Wave System (d_disper.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 27) Non-dispersive Long Wave System (d_nodisp.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 28) 3-Component KdV System (d_3ckdv.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 29) 2-Component Nonlinear Schrodinger Equation (d_2cnls.m)"\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" 30) Boussinesq System (d_bous.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" nn) Next Page"\)], "Print"],
+
+Cell[BoxData[
+    \(" tt) Your System"\)], "Print"],
+
+Cell[BoxData[
+    \(" qq) Exit the Program"\)], "Print"],
+
+Cell[BoxData[
+    \("------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("  *** MENU INTERFACE ***  (page: "\[InvisibleSpace]3\
+\[InvisibleSpace]")"\),
+      SequenceForm[ "  *** MENU INTERFACE ***  (page: ", 3, ")"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("-------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \(" 31) Sine-Gordon Equation (d_sineNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 32) Sine-Gordon Equation w/ weighted parameter (d_sineP.m)"\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" 33) Sine-Gordon System (d_sineSY.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 34) Hyperbolic Sine-Gordon Equation (d_sinhNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 35) Hyperbolic Sine-Gordon Equation w/ weighted parameter \
+(d_sinhP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 36) Hyperbolic Sine-Gordon System (d_sinhSY.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 37) Liouville Equation (d_liouNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 38) Liouville Equation w/ weighted parameter (d_liouP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 39) Liouville System (d_liouSY.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 40) Double Sine-Gordon Equation (d_dsinNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 41) Multiple Sine-Gordon Equation (d_msinNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 42) Tzetzeica Equation (d_tzetNP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 43) Tzetzeica Equation w/ weighted parameter (d_tzetP.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 44) Mikhailov System (d_mikhSY.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" 45) Double-Liouville System (d_dlioSY.m)"\)], "Print"],
+
+Cell[BoxData[
+    \(" nn) Next Page"\)], "Print"],
+
+Cell[BoxData[
+    \(" tt) Your System"\)], "Print"],
+
+Cell[BoxData[
+    \(" qq) Exit the Program"\)], "Print"],
+
+Cell[BoxData[
+    \("------------------------------------------"\)], "Print"],
+
+Cell[BoxData[
+    \("*********************************************************"\)], "Print"],
+
+Cell[BoxData[
+    \("        WELCOME TO THE MATHEMATICA PROGRAM               "\)], "Print"],
+
+Cell[BoxData[
+    \("  by UNAL GOKTAS, PAUL ADAMS, and WILLY HEREMAN          "\)], "Print"],
+
+Cell[BoxData[
+    \("    FOR THE COMPUTATION OF CONSERVED DENSITIES           "\)], "Print"],
+
+Cell[BoxData[
+    \("  WITH OR WITHOUT TRANSCENDENTAL NONLINEARITIES          "\)], "Print"],
+
+Cell[BoxData[
+    \("     Version 3.0 released on October 5, 2003             "\)], "Print"],
+
+Cell[BoxData[
+    \("                 Copyright 2003                          "\)], "Print"],
+
+Cell[BoxData[
+    \("*********************************************************"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Working with the data file for the \
+"\[InvisibleSpace]"Sine-Gordon System"\[InvisibleSpace]"."\),
+      SequenceForm[ 
+      "Working with the data file for the ", "Sine-Gordon System", "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Equation "\[InvisibleSpace]1\[InvisibleSpace]" of \
+the system with "\[InvisibleSpace]2\[InvisibleSpace]" equation(s):"\),
+      SequenceForm[ 
+      "Equation ", 1, " of the system with ", 2, " equation(s):"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"  \"\>", "\[InvisibleSpace]", 
+        RowBox[{
+          RowBox[{"-", 
+            RowBox[{"(", 
+              InterpretationBox[
+                RowBox[{"u", "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_2\),
+                    Subscript[ 2],
+                    Editable->False]}],
+                SequenceForm[ u, 
+                  Subscript[ 2]],
+                Editable->False], ")"}]}], "+", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_1\),
+                Subscript[ 1],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_","\),
+                Subscript[ ","],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[
+                SubscriptBox["\[Null]", 
+                  InterpretationBox["t",
+                    SequenceForm[ t],
+                    Editable->False]],
+                Subscript[ 
+                  SequenceForm[ t]],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 1], 
+              Subscript[ ","], 
+              Subscript[ 
+                SequenceForm[ t]]],
+            Editable->False]}], "\[InvisibleSpace]", "\<\" = 0\"\>"}],
+      SequenceForm[ "  ", 
+        Plus[ 
+          Times[ -1, 
+            SequenceForm[ u, 
+              Subscript[ 2]]], 
+          SequenceForm[ u, 
+            Subscript[ 1], 
+            Subscript[ ","], 
+            Subscript[ 
+              SequenceForm[ t]]]], " = 0"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Equation "\[InvisibleSpace]2\[InvisibleSpace]" of \
+the system with "\[InvisibleSpace]2\[InvisibleSpace]" equation(s):"\),
+      SequenceForm[ 
+      "Equation ", 2, " of the system with ", 2, " equation(s):"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[
+      RowBox[{"\<\"  \"\>", "\[InvisibleSpace]", 
+        RowBox[{
+          RowBox[{"-", 
+            RowBox[{"(", 
+              InterpretationBox[
+                RowBox[{"u", "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_1\),
+                    Subscript[ 1],
+                    Editable->False], "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_","\),
+                    Subscript[ ","],
+                    Editable->False], "\[InvisibleSpace]", 
+                  InterpretationBox[
+                    SubscriptBox["\[Null]", 
+                      InterpretationBox[\(x\[InvisibleSpace]x\),
+                        SequenceForm[ x, x],
+                        Editable->False]],
+                    Subscript[ 
+                      SequenceForm[ x, x]],
+                    Editable->False]}],
+                SequenceForm[ u, 
+                  Subscript[ 1], 
+                  Subscript[ ","], 
+                  Subscript[ 
+                    SequenceForm[ x, x]]],
+                Editable->False], ")"}]}], "+", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_2\),
+                Subscript[ 2],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_","\),
+                Subscript[ ","],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[
+                SubscriptBox["\[Null]", 
+                  InterpretationBox["t",
+                    SequenceForm[ t],
+                    Editable->False]],
+                Subscript[ 
+                  SequenceForm[ t]],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 2], 
+              Subscript[ ","], 
+              Subscript[ 
+                SequenceForm[ t]]],
+            Editable->False], "-", 
+          RowBox[{"alpha", " ", 
+            RowBox[{"Sin", "[", 
+              InterpretationBox[
+                RowBox[{"u", "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_1\),
+                    Subscript[ 1],
+                    Editable->False]}],
+                SequenceForm[ u, 
+                  Subscript[ 1]],
+                Editable->False], "]"}]}]}], 
+        "\[InvisibleSpace]", "\<\" = 0\"\>"}],
+      SequenceForm[ "  ", 
+        Plus[ 
+          Times[ -1, 
+            SequenceForm[ u, 
+              Subscript[ 1], 
+              Subscript[ ","], 
+              Subscript[ 
+                SequenceForm[ x, x]]]], 
+          SequenceForm[ u, 
+            Subscript[ 2], 
+            Subscript[ ","], 
+            Subscript[ 
+              SequenceForm[ t]]], 
+          Times[ -1, alpha, 
+            Sin[ 
+              SequenceForm[ u, 
+                Subscript[ 1]]]]], " = 0"],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Highest order of derivative in the system is "\
+\[InvisibleSpace]2\[InvisibleSpace]"."\),
+      SequenceForm[ "Highest order of derivative in the system is ", 2, "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("--> The following variables have weight of zero: "\
+\[InvisibleSpace]{u[1]}\),
+      SequenceForm[ "--> The following variables have weight of zero: ", {
+        u[ 1]}],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Program determines the weights of the variables (and parameters)."\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("For the given system:"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("* weight of u["\[InvisibleSpace]1\[InvisibleSpace]"] \
+is "\[InvisibleSpace]0\[InvisibleSpace]"."\),
+      SequenceForm[ "* weight of u[", 1, "] is ", 0, "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("* weight of u["\[InvisibleSpace]2\[InvisibleSpace]"] \
+is "\[InvisibleSpace]1\[InvisibleSpace]"."\),
+      SequenceForm[ "* weight of u[", 2, "] is ", 1, "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("* weight of \
+"\[InvisibleSpace]alpha\[InvisibleSpace]" is "\[InvisibleSpace]2\
+\[InvisibleSpace]"."\),
+      SequenceForm[ "* weight of ", alpha, " is ", 2, "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("* weight of d/dt is "\[InvisibleSpace]1\
+\[InvisibleSpace]"."\),
+      SequenceForm[ "* weight of d/dt is ", 1, "."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("The rank of rho should be an integer multiple of the lowest \
+weight"\)], "Print"],
+
+Cell[BoxData[
+    \("of the DEPENDENT variable(s). Fractional weights are allowed."\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Computation of the density (and flux) of RANK = "\
+\[InvisibleSpace]2\),
+      SequenceForm[ "Computation of the density (and flux) of RANK = ", 2],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Starting the construction of the form of the density."\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("For RANK = "\[InvisibleSpace]2\[InvisibleSpace]", \
+this is the form of density rho[x,t]: "\),
+      SequenceForm[ 
+      "For RANK = ", 2, ", this is the form of density rho[x,t]: "],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(alpha\ \(h[1]\)[u[1]]\), "+", 
+      RowBox[{
+        SuperscriptBox[
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_2\),
+                  Subscript[ 2],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 2]],
+              Editable->False], ")"}], "2"], " ", \(\(h[2]\)[u[1]]\)}], "+", 
+      RowBox[{
+        RowBox[{"(", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_2\),
+                Subscript[ 2],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 2]],
+            Editable->False], ")"}], " ", 
+        RowBox[{"(", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_1\),
+                Subscript[ 1],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_","\),
+                Subscript[ ","],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[
+                SubscriptBox["\[Null]", 
+                  InterpretationBox["x",
+                    SequenceForm[ x],
+                    Editable->False]],
+                Subscript[ 
+                  SequenceForm[ x]],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 1], 
+              Subscript[ ","], 
+              Subscript[ 
+                SequenceForm[ x]]],
+            Editable->False], ")"}], " ", \(\(h[3]\)[u[1]]\)}], "+", 
+      RowBox[{
+        SuperscriptBox[
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_1\),
+                  Subscript[ 1],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_","\),
+                  Subscript[ ","],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[
+                  SubscriptBox["\[Null]", 
+                    InterpretationBox["x",
+                      SequenceForm[ x],
+                      Editable->False]],
+                  Subscript[ 
+                    SequenceForm[ x]],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 1], 
+                Subscript[ ","], 
+                Subscript[ 
+                  SequenceForm[ x]]],
+              Editable->False], ")"}], "2"], 
+        " ", \(\(h[4]\)[u[1]]\)}]}]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Now deriving the list of equations to solve (from coefficients)."\)], \
+"Print"],
+
+Cell[BoxData[
+    \("Now applying the Euler operator."\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Length of system to solve: "\[InvisibleSpace]10\),
+      SequenceForm[ "Length of system to solve: ", 10],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("Now solving the coefficient functions for formrho."\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("There are "\[InvisibleSpace]10\[InvisibleSpace]" \
+equations in the ODE system to solve."\),
+      SequenceForm[ 
+      "There are ", 10, " equations in the ODE system to solve."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("    Number of eqs left to solve: "\[InvisibleSpace]6\
+\),
+      SequenceForm[ "    Number of eqs left to solve: ", 6],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("    Number of eqs left to solve: "\[InvisibleSpace]3\
+\),
+      SequenceForm[ "    Number of eqs left to solve: ", 3],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("    Number of eqs left to solve: "\[InvisibleSpace]2\
+\),
+      SequenceForm[ "    Number of eqs left to solve: ", 2],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("    Number of eqs left to solve: "\[InvisibleSpace]1\
+\),
+      SequenceForm[ "    Number of eqs left to solve: ", 1],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("System solved."\)], "Print"],
+
+Cell[BoxData[
+    \("Finished with solving for coefficient functions for formrho."\)], \
+"Print"],
+
+Cell[BoxData[
+    \("Now solving the remaining linear system for constant \
+coefficients."\)], "Print"],
+
+Cell[BoxData[
+    \("Now checking for completeness of the solution."\)], "Print"],
+
+Cell[BoxData[
+    \("Now creating the final form of the rho."\)], "Print"],
+
+Cell[BoxData[
+    \("After substitution, the solution for rho is: "\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(2\ alpha\ Cos[\(u[1]\)[x, t]]\ \(C[0]\)[1]\), 
+      "+", \(alpha\ \(C[2]\)[1]\), "+", \(\(C[0]\)[1]\ \(u[2]\)[x, t]\^2\), 
+      "+", 
+      RowBox[{\(\(C[1]\)[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "+", 
+      RowBox[{\(\(C[0]\)[1]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Testing D[J[x,t],x]. Variational derivative is equal to zero."\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Starting computation of J[x,t] with the continuous homotopy operator."\
+\)], "Print"],
+
+Cell[BoxData[
+    \("Finished computation of J[x,t] with the continuous homotopy operator."\
+\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Now finalizing the form of the solution."\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("   To remove fractions, multiplying results by "\
+\[InvisibleSpace]2\),
+      SequenceForm[ "   To remove fractions, multiplying results by ", 2],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Final rho[x,t] = "\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(2\ alpha\ c[3]\), "+", \(4\ alpha\ c[1]\ Cos[\(u[1]\)[x, t]]\), 
+      "+", \(2\ c[1]\ \(u[2]\)[x, t]\^2\), "+", 
+      RowBox[{"2", " ", \(c[2]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "+", 
+      RowBox[{"2", " ", \(c[1]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Print"],
+
+Cell[BoxData[
+    \("Final J[x,t] = "\)], "Print"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+      "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+      "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+      RowBox[{"4", " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "-", 
+      RowBox[{\(c[2]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("These can be accessed by typing: rho[x,t] and J[x,t]"\)], "Print"],
+
+Cell[BoxData[
+    \("Sorting rho"\)], "Print"],
+
+Cell[BoxData[
+    \("Sorting J"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("Testing final solution."\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("D_t(rho) + D_x(J): "\[InvisibleSpace]0\),
+      SequenceForm[ "D_t(rho) + D_x(J): ", 0],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \("   D_t(rho) + D_x(J) = 0, Success!"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("*********************** SUMMARY ***********************"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    InterpretationBox[\("Total session time used in the current session is "\
+\[InvisibleSpace]14.5509232`8.313405546339235\[InvisibleSpace]" seconds."\),
+      SequenceForm[ 
+      "Total session time used in the current session is ", 
+        14.5509232`8.313405546339235, " seconds."],
+      Editable->False]], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see all the densities type: listallrhos,"\)], "Print"],
+
+Cell[BoxData[
+    \("or pdeform[listallrhos]."\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see the last density type: rho[x,t], or use pdeform[rho[x,t]]."\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see the last density sorted by coefficients"\)], "Print"],
+
+Cell[BoxData[
+    \("type 'sortedrho' or `sortIt[rho[x,t]]'"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see all the fluxes type: listallfluxes,"\)], "Print"],
+
+Cell[BoxData[
+    \("or pdeform[listallfluxes]."\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see the last flux type: J[x,t], or use pdeform[J[x,t]]."\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("To see the last flux sorted by coefficients"\)], "Print"],
+
+Cell[BoxData[
+    \("type 'sortedflux' or `sortIt[J[x,t]]'"\)], "Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \("*************************** SUMMARY ***************************"\)], \
+"Print"],
+
+Cell[BoxData[
+    \(" "\)], "Print"],
+
+Cell[BoxData[
+    \($Aborted\)], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(rho[x, t]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(2\ alpha\ c[3]\), "+", \(4\ alpha\ c[1]\ Cos[\(u[1]\)[x, t]]\), 
+      "+", \(2\ c[1]\ \(u[2]\)[x, t]\^2\), "+", 
+      RowBox[{"2", " ", \(c[2]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "+", 
+      RowBox[{"2", " ", \(c[1]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(J[x, t]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+      "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+      "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+      RowBox[{"4", " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "-", 
+      RowBox[{\(c[2]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pdeform[rho[x, t]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(2\ alpha\ c[3]\), "+", 
+      RowBox[{"4", " ", "alpha", " ", \(c[1]\), " ", 
+        RowBox[{"Cos", "[", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_1\),
+                Subscript[ 1],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 1]],
+            Editable->False], "]"}]}], "+", 
+      RowBox[{"2", " ", \(c[1]\), " ", 
+        SuperscriptBox[
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_2\),
+                  Subscript[ 2],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 2]],
+              Editable->False], ")"}], "2"]}], "+", 
+      RowBox[{"2", " ", \(c[2]\), " ", 
+        RowBox[{"(", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_2\),
+                Subscript[ 2],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 2]],
+            Editable->False], ")"}], " ", 
+        RowBox[{"(", 
+          InterpretationBox[
+            RowBox[{"u", "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_1\),
+                Subscript[ 1],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[\(\[Null]\_","\),
+                Subscript[ ","],
+                Editable->False], "\[InvisibleSpace]", 
+              InterpretationBox[
+                SubscriptBox["\[Null]", 
+                  InterpretationBox["x",
+                    SequenceForm[ x],
+                    Editable->False]],
+                Subscript[ 
+                  SequenceForm[ x]],
+                Editable->False]}],
+            SequenceForm[ u, 
+              Subscript[ 1], 
+              Subscript[ ","], 
+              Subscript[ 
+                SequenceForm[ x]]],
+            Editable->False], ")"}]}], "+", 
+      RowBox[{"2", " ", \(c[1]\), " ", 
+        SuperscriptBox[
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_1\),
+                  Subscript[ 1],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_","\),
+                  Subscript[ ","],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[
+                  SubscriptBox["\[Null]", 
+                    InterpretationBox["x",
+                      SequenceForm[ x],
+                      Editable->False]],
+                  Subscript[ 
+                    SequenceForm[ x]],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 1], 
+                Subscript[ ","], 
+                Subscript[ 
+                  SequenceForm[ x]]],
+              Editable->False], ")"}], "2"]}]}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(pdeform[J[x, t]]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(pdeform[listallrhos]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{\(2\ alpha\ c[3]\), "+", 
+        RowBox[{"4", " ", "alpha", " ", \(c[1]\), " ", 
+          RowBox[{"Cos", "[", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_1\),
+                  Subscript[ 1],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 1]],
+              Editable->False], "]"}]}], "+", 
+        RowBox[{"2", " ", \(c[1]\), " ", 
+          SuperscriptBox[
+            RowBox[{"(", 
+              InterpretationBox[
+                RowBox[{"u", "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_2\),
+                    Subscript[ 2],
+                    Editable->False]}],
+                SequenceForm[ u, 
+                  Subscript[ 2]],
+                Editable->False], ")"}], "2"]}], "+", 
+        RowBox[{"2", " ", \(c[2]\), " ", 
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_2\),
+                  Subscript[ 2],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 2]],
+              Editable->False], ")"}], " ", 
+          RowBox[{"(", 
+            InterpretationBox[
+              RowBox[{"u", "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_1\),
+                  Subscript[ 1],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[\(\[Null]\_","\),
+                  Subscript[ ","],
+                  Editable->False], "\[InvisibleSpace]", 
+                InterpretationBox[
+                  SubscriptBox["\[Null]", 
+                    InterpretationBox["x",
+                      SequenceForm[ x],
+                      Editable->False]],
+                  Subscript[ 
+                    SequenceForm[ x]],
+                  Editable->False]}],
+              SequenceForm[ u, 
+                Subscript[ 1], 
+                Subscript[ ","], 
+                Subscript[ 
+                  SequenceForm[ x]]],
+              Editable->False], ")"}]}], "+", 
+        RowBox[{"2", " ", \(c[1]\), " ", 
+          SuperscriptBox[
+            RowBox[{"(", 
+              InterpretationBox[
+                RowBox[{"u", "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_1\),
+                    Subscript[ 1],
+                    Editable->False], "\[InvisibleSpace]", 
+                  InterpretationBox[\(\[Null]\_","\),
+                    Subscript[ ","],
+                    Editable->False], "\[InvisibleSpace]", 
+                  InterpretationBox[
+                    SubscriptBox["\[Null]", 
+                      InterpretationBox["x",
+                        SequenceForm[ x],
+                        Editable->False]],
+                    Subscript[ 
+                      SequenceForm[ x]],
+                    Editable->False]}],
+                SequenceForm[ u, 
+                  Subscript[ 1], 
+                  Subscript[ ","], 
+                  Subscript[ 
+                    SequenceForm[ x]]],
+                Editable->False], ")"}], "2"]}]}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[BoxData[
+    \(pdeform[listallfluxes]\)], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortedrho\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(4\ alpha\ c[1]\ Cos[\(u[1]\)[x, t]]\), 
+          "+", \(2\ c[1]\ \(u[2]\)[x, t]\^2\), "+", 
+          RowBox[{"2", " ", \(c[1]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}], 
+        ",", 
+        RowBox[{"2", " ", \(c[2]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], 
+        ",", \(2\ alpha\ c[3]\)}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortedflux\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-4\), " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], ",", 
+        RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+          "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+          "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+          RowBox[{\(c[2]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}]}], 
+      "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortIt[listallfluxes[\([1]\)]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-4\), " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], ",", 
+        RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+          "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+          "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+          RowBox[{\(c[2]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}]}], 
+      "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(listallfluxes\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+        "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+        "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+        RowBox[{"4", " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], "-", 
+        RowBox[{\(c[2]\), " ", 
+          SuperscriptBox[
+            RowBox[{
+              SuperscriptBox[\(u[1]\), 
+                TagBox[\((1, 0)\),
+                  Derivative],
+                MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}], 
+      "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(listallfluxes[\([1]\)]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+      "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+      "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+      RowBox[{"4", " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+        RowBox[{
+          SuperscriptBox[\(u[1]\), 
+            TagBox[\((1, 0)\),
+              Derivative],
+            MultilineFunction->None], "[", \(x, t\), "]"}]}], "-", 
+      RowBox[{\(c[2]\), " ", 
+        SuperscriptBox[
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}], 
+          "2"]}]}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortedrho\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(4\ alpha\ c[1]\ Cos[\(u[1]\)[x, t]]\), 
+          "+", \(2\ c[1]\ \(u[2]\)[x, t]\^2\), "+", 
+          RowBox[{"2", " ", \(c[1]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}], 
+        ",", 
+        RowBox[{"2", " ", \(c[2]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], 
+        ",", \(2\ alpha\ c[3]\)}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortedflux\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-4\), " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], ",", 
+        RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+          "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+          "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+          RowBox[{\(c[2]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}]}], 
+      "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortIt[rho[x, t]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(4\ alpha\ c[1]\ Cos[\(u[1]\)[x, t]]\), 
+          "+", \(2\ c[1]\ \(u[2]\)[x, t]\^2\), "+", 
+          RowBox[{"2", " ", \(c[1]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}], 
+        ",", 
+        RowBox[{"2", " ", \(c[2]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], 
+        ",", \(2\ alpha\ c[3]\)}], "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortIt[listallfluxes[\([1]\)]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-4\), " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], ",", 
+        RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+          "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+          "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+          RowBox[{\(c[2]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}]}], 
+      "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+    \(sortIt[J[x, t]]\)], "Input"],
+
+Cell[BoxData[
+    RowBox[{"{", 
+      RowBox[{
+        RowBox[{\(-4\), " ", \(c[1]\), " ", \(\(u[2]\)[x, t]\), " ", 
+          RowBox[{
+            SuperscriptBox[\(u[1]\), 
+              TagBox[\((1, 0)\),
+                Derivative],
+              MultilineFunction->None], "[", \(x, t\), "]"}]}], ",", 
+        RowBox[{\(\(-2\)\ alpha\ c[2]\), 
+          "+", \(2\ alpha\ c[2]\ Cos[\(u[1]\)[x, t]]\), 
+          "-", \(c[2]\ \(u[2]\)[x, t]\^2\), "-", 
+          RowBox[{\(c[2]\), " ", 
+            SuperscriptBox[
+              RowBox[{
+                SuperscriptBox[\(u[1]\), 
+                  TagBox[\((1, 0)\),
+                    Derivative],
+                  MultilineFunction->None], "[", \(x, t\), "]"}], "2"]}]}]}], 
+      "}"}]], "Output"]
+}, Open  ]]
+},
+FrontEndVersion->"5.0 for Microsoft Windows",
+ScreenRectangle->{{0, 1280}, {0, 941}},
+ScreenStyleEnvironment->"Presentation",
+WindowSize->{864, 651},
+WindowMargins->{{4, Automatic}, {Automatic, 14}}
+]
+
+(*******************************************************************
+Cached data follows.  If you edit this Notebook file directly, not
+using Mathematica, you must remove the line containing CacheID at
+the top of  the file.  The cache data will then be recreated when
+you save this file from within Mathematica.
+*******************************************************************)
+
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+
+(*NotebookFileOutline
+Notebook[{
+Cell[1754, 51, 195, 3, 84, "Input"],
+Cell[1952, 56, 112, 2, 38, "Input"],
+
+Cell[CellGroupData[{
+Cell[2089, 62, 89, 1, 38, "Input"],
+Cell[2181, 65, 72, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[2290, 71, 67, 1, 38, "Input"],
+Cell[2360, 74, 36, 1, 28, "Print"],
+Cell[2399, 77, 216, 4, 28, "Print"],
+Cell[2618, 83, 78, 1, 28, "Print"],
+Cell[2699, 86, 62, 1, 28, "Print"],
+Cell[2764, 89, 72, 1, 28, "Print"],
+Cell[2839, 92, 89, 1, 28, "Print"],
+Cell[2931, 95, 84, 1, 28, "Print"],
+Cell[3018, 98, 82, 1, 28, "Print"],
+Cell[3103, 101, 82, 1, 28, "Print"],
+Cell[3188, 104, 84, 1, 28, "Print"],
+Cell[3275, 107, 91, 1, 28, "Print"],
+Cell[3369, 110, 86, 1, 28, "Print"],
+Cell[3458, 113, 89, 1, 28, "Print"],
+Cell[3550, 116, 84, 1, 28, "Print"],
+Cell[3637, 119, 68, 1, 28, "Print"],
+Cell[3708, 122, 74, 1, 28, "Print"],
+Cell[3785, 125, 88, 1, 28, "Print"],
+Cell[3876, 128, 74, 1, 28, "Print"],
+Cell[3953, 131, 49, 1, 28, "Print"],
+Cell[4005, 134, 51, 1, 28, "Print"],
+Cell[4059, 137, 56, 1, 28, "Print"],
+Cell[4118, 140, 77, 1, 28, "Print"],
+Cell[4198, 143, 36, 1, 28, "Print"],
+Cell[4237, 146, 216, 4, 28, "Print"],
+Cell[4456, 152, 78, 1, 28, "Print"],
+Cell[4537, 155, 75, 1, 28, "Print"],
+Cell[4615, 158, 60, 1, 28, "Print"],
+Cell[4678, 161, 87, 1, 28, "Print"],
+Cell[4768, 164, 88, 1, 28, "Print"],
+Cell[4859, 167, 62, 1, 28, "Print"],
+Cell[4924, 170, 66, 1, 28, "Print"],
+Cell[4993, 173, 77, 1, 28, "Print"],
+Cell[5073, 176, 62, 1, 28, "Print"],
+Cell[5138, 179, 69, 1, 28, "Print"],
+Cell[5210, 182, 75, 1, 28, "Print"],
+Cell[5288, 185, 80, 1, 28, "Print"],
+Cell[5371, 188, 84, 1, 28, "Print"],
+Cell[5458, 191, 74, 1, 28, "Print"],
+Cell[5535, 194, 96, 2, 28, "Print"],
+Cell[5634, 198, 68, 1, 28, "Print"],
+Cell[5705, 201, 49, 1, 28, "Print"],
+Cell[5757, 204, 51, 1, 28, "Print"],
+Cell[5811, 207, 56, 1, 28, "Print"],
+Cell[5870, 210, 77, 1, 28, "Print"],
+Cell[5950, 213, 36, 1, 28, "Print"],
+Cell[5989, 216, 216, 4, 28, "Print"],
+Cell[6208, 222, 78, 1, 28, "Print"],
+Cell[6289, 225, 73, 1, 28, "Print"],
+Cell[6365, 228, 96, 2, 28, "Print"],
+Cell[6464, 232, 71, 1, 28, "Print"],
+Cell[6538, 235, 84, 1, 28, "Print"],
+Cell[6625, 238, 107, 2, 28, "Print"],
+Cell[6735, 242, 82, 1, 28, "Print"],
+Cell[6820, 245, 71, 1, 28, "Print"],
+Cell[6894, 248, 92, 1, 28, "Print"],
+Cell[6989, 251, 69, 1, 28, "Print"],
+Cell[7061, 254, 80, 1, 28, "Print"],
+Cell[7144, 257, 82, 1, 28, "Print"],
+Cell[7229, 260, 71, 1, 28, "Print"],
+Cell[7303, 263, 92, 1, 28, "Print"],
+Cell[7398, 266, 69, 1, 28, "Print"],
+Cell[7470, 269, 76, 1, 28, "Print"],
+Cell[7549, 272, 49, 1, 28, "Print"],
+Cell[7601, 275, 51, 1, 28, "Print"],
+Cell[7655, 278, 56, 1, 28, "Print"],
+Cell[7714, 281, 77, 1, 28, "Print"],
+Cell[7794, 284, 92, 1, 28, "Print"],
+Cell[7889, 287, 92, 1, 28, "Print"],
+Cell[7984, 290, 92, 1, 28, "Print"],
+Cell[8079, 293, 92, 1, 28, "Print"],
+Cell[8174, 296, 92, 1, 28, "Print"],
+Cell[8269, 299, 92, 1, 28, "Print"],
+Cell[8364, 302, 92, 1, 28, "Print"],
+Cell[8459, 305, 92, 1, 28, "Print"],
+Cell[8554, 308, 36, 1, 28, "Print"],
+Cell[8593, 311, 265, 5, 28, "Print"],
+Cell[8861, 318, 36, 1, 28, "Print"],
+Cell[8900, 321, 283, 5, 28, "Print"],
+Cell[9186, 328, 1663, 46, 29, "Print"],
+Cell[10852, 376, 36, 1, 28, "Print"],
+Cell[10891, 379, 283, 5, 28, "Print"],
+Cell[11177, 386, 2908, 78, 29, "Print"],
+Cell[14088, 466, 36, 1, 28, "Print"],
+Cell[14127, 469, 240, 4, 28, "Print"],
+Cell[14370, 475, 36, 1, 28, "Print"],
+Cell[14409, 478, 243, 5, 28, "Print"],
+Cell[14655, 485, 36, 1, 28, "Print"],
+Cell[14694, 488, 102, 2, 28, "Print"],
+Cell[14799, 492, 36, 1, 28, "Print"],
+Cell[14838, 495, 56, 1, 28, "Print"],
+Cell[14897, 498, 36, 1, 28, "Print"],
+Cell[14936, 501, 232, 4, 28, "Print"],
+Cell[15171, 507, 232, 4, 28, "Print"],
+Cell[15406, 513, 236, 5, 28, "Print"],
+Cell[15645, 520, 190, 4, 28, "Print"],
+Cell[15838, 526, 36, 1, 28, "Print"],
+Cell[15877, 529, 103, 2, 28, "Print"],
+Cell[15983, 533, 98, 2, 28, "Print"],
+Cell[16084, 537, 36, 1, 28, "Print"],
+Cell[16123, 540, 221, 4, 28, "Print"],
+Cell[16347, 546, 36, 1, 28, "Print"],
+Cell[16386, 549, 88, 1, 28, "Print"],
+Cell[16477, 552, 36, 1, 28, "Print"],
+Cell[16516, 555, 257, 5, 28, "Print"],
+Cell[16776, 562, 36, 1, 28, "Print"],
+Cell[16815, 565, 2679, 71, 30, "Print"],
+Cell[19497, 638, 36, 1, 28, "Print"],
+Cell[19536, 641, 101, 2, 28, "Print"],
+Cell[19640, 645, 67, 1, 28, "Print"],
+Cell[19710, 648, 179, 3, 28, "Print"],
+Cell[19892, 653, 85, 1, 28, "Print"],
+Cell[19980, 656, 253, 5, 28, "Print"],
+Cell[20236, 663, 191, 4, 28, "Print"],
+Cell[20430, 669, 191, 4, 28, "Print"],
+Cell[20624, 675, 191, 4, 28, "Print"],
+Cell[20818, 681, 191, 4, 28, "Print"],
+Cell[21012, 687, 49, 1, 28, "Print"],
+Cell[21064, 690, 97, 2, 28, "Print"],
+Cell[21164, 694, 103, 2, 28, "Print"],
+Cell[21270, 698, 81, 1, 28, "Print"],
+Cell[21354, 701, 74, 1, 28, "Print"],
+Cell[21431, 704, 80, 1, 28, "Print"],
+Cell[21514, 707, 677, 17, 53, "Print"],
+Cell[22194, 726, 36, 1, 28, "Print"],
+Cell[22233, 729, 98, 2, 28, "Print"],
+Cell[22334, 733, 36, 1, 28, "Print"],
+Cell[22373, 736, 106, 2, 28, "Print"],
+Cell[22482, 740, 106, 2, 28, "Print"],
+Cell[22591, 744, 36, 1, 28, "Print"],
+Cell[22630, 747, 75, 1, 28, "Print"],
+Cell[22708, 750, 219, 4, 28, "Print"],
+Cell[22930, 756, 36, 1, 28, "Print"],
+Cell[22969, 759, 52, 1, 28, "Print"],
+Cell[23024, 762, 661, 16, 53, "Print"],
+Cell[23688, 780, 50, 1, 28, "Print"],
+Cell[23741, 783, 660, 17, 53, "Print"],
+Cell[24404, 802, 36, 1, 28, "Print"],
+Cell[24443, 805, 87, 1, 28, "Print"],
+Cell[24533, 808, 46, 1, 28, "Print"],
+Cell[24582, 811, 44, 1, 28, "Print"],
+Cell[24629, 814, 36, 1, 28, "Print"],
+Cell[24668, 817, 58, 1, 28, "Print"],
+Cell[24729, 820, 161, 3, 28, "Print"],
+Cell[24893, 825, 69, 1, 28, "Print"],
+Cell[24965, 828, 36, 1, 28, "Print"],
+Cell[25004, 831, 90, 1, 28, "Print"],
+Cell[25097, 834, 36, 1, 28, "Print"],
+Cell[25136, 837, 336, 6, 28, "Print"],
+Cell[25475, 845, 36, 1, 28, "Print"],
+Cell[25514, 848, 78, 1, 28, "Print"],
+Cell[25595, 851, 59, 1, 28, "Print"],
+Cell[25657, 854, 36, 1, 28, "Print"],
+Cell[25696, 857, 102, 2, 28, "Print"],
+Cell[25801, 861, 36, 1, 28, "Print"],
+Cell[25840, 864, 81, 1, 28, "Print"],
+Cell[25924, 867, 73, 1, 28, "Print"],
+Cell[26000, 870, 36, 1, 28, "Print"],
+Cell[26039, 873, 77, 1, 28, "Print"],
+Cell[26119, 876, 61, 1, 28, "Print"],
+Cell[26183, 879, 36, 1, 28, "Print"],
+Cell[26222, 882, 93, 1, 28, "Print"],
+Cell[26318, 885, 36, 1, 28, "Print"],
+Cell[26357, 888, 78, 1, 28, "Print"],
+Cell[26438, 891, 72, 1, 28, "Print"],
+Cell[26513, 894, 36, 1, 28, "Print"],
+Cell[26552, 897, 100, 2, 28, "Print"],
+Cell[26655, 901, 36, 1, 28, "Print"],
+Cell[26694, 904, 42, 1, 38, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[26773, 910, 42, 1, 38, "Input"],
+Cell[26818, 913, 662, 16, 63, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[27517, 934, 40, 1, 38, "Input"],
+Cell[27560, 937, 661, 17, 63, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[28258, 959, 51, 1, 38, "Input"],
+Cell[28312, 962, 3043, 80, 40, "Output"]
+}, Open  ]],
+Cell[31370, 1045, 49, 1, 38, "Input"],
+
+Cell[CellGroupData[{
+Cell[31444, 1050, 53, 1, 38, "Input"],
+Cell[31500, 1053, 3228, 81, 62, "Output"]
+}, Open  ]],
+Cell[34743, 1137, 55, 1, 38, "Input"],
+
+Cell[CellGroupData[{
+Cell[34823, 1142, 42, 1, 38, "Input"],
+Cell[34868, 1145, 759, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[35664, 1169, 43, 1, 38, "Input"],
+Cell[35710, 1172, 754, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[36501, 1196, 63, 1, 38, "Input"],
+Cell[36567, 1199, 754, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[37358, 1223, 46, 1, 38, "Input"],
+Cell[37407, 1226, 714, 18, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[38158, 1249, 55, 1, 38, "Input"],
+Cell[38216, 1252, 661, 17, 63, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[38914, 1274, 42, 1, 38, "Input"],
+Cell[38959, 1277, 759, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[39755, 1301, 43, 1, 38, "Input"],
+Cell[39801, 1304, 754, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[40592, 1328, 50, 1, 38, "Input"],
+Cell[40645, 1331, 759, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[41441, 1355, 63, 1, 38, "Input"],
+Cell[41507, 1358, 754, 19, 67, "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+Cell[42298, 1382, 48, 1, 38, "Input"],
+Cell[42349, 1385, 754, 19, 67, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+
+
+(*******************************************************************
+End of Mathematica Notebook file.
+*******************************************************************)
+
